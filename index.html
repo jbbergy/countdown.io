@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>countdown.io</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body id="app">
+  <div class="date-picker">
+    <input type="date" id="input-date" class="date-picker__input-date">
+    <input type="time" id="input-time" class="date-picker__input-time">
+  </div>
+  <div class="countdown">
+    <div class="countdown__hours">00</div>
+    <div class="countdown__dots">:</div>
+    <div class="countdown__minuts">00</div>
+    <div class="countdown__dots">:</div>
+    <div class="countdown__seconds">00</div>
+  </div>
+  <div class="actions">
+    <button id="start" class="actions__start">START</button>
+    <button id="stop" class="actions__stop">STOP</button>
+  </div>
+  <audio src="./bell.wav" class="audio" id="audio" preload="auto"></audio>
+</body>
+
+</html>
